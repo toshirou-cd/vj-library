@@ -4,7 +4,7 @@ import {Icon, Menu, Item,Button, Dropdown} from 'semantic-ui-react'
 
 const TopBar = () => {
     return (
-            <Menu size='small'>
+            <Menu size='small' className="TopBar">
             <Menu.Menu position='right'>
                 <Dropdown item text='AnhNH'>
                     <Dropdown.Menu>

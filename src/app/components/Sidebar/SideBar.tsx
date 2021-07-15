@@ -1,16 +1,14 @@
 import React from "react";
 import SideBarData from "./SideBarData";
-import { Menu, Sidebar } from "semantic-ui-react";
+import { Menu, Sidebar, Image } from "semantic-ui-react";
 import "./SideBar.css";
 import { NavLink } from "react-router-dom";
+import Logo from "../../assets/Logo.png";
 const SideBar = () => {
   return (
     <div>
-      <Sidebar
-          visible={true}
-          className="SideBar">
-          
-        <Menu vertical className="MenuList">
+      <Sidebar as={Menu} vertical animation="uncover" visible={true} className="SideBar">
+        <Image src={Logo} size="small" className="Logo" />
           {SideBarData.map((val, key) => {
             return (
               <Menu.Item
@@ -26,7 +24,6 @@ const SideBar = () => {
               </Menu.Item>
             );
           })}
-        </Menu>
       </Sidebar>
     </div>
   );
