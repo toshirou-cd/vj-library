@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import SideBar from "./app/components/Sidebar/SideBar";
+import { BrowserRouter, Route } from "react-router-dom";
+import MainLibrary from "./app/pages/patrons/MainLibrary";
+import MyRequest from "./app/pages/patrons/MyRequest";
+import MyBooks from "./app/pages/patrons/MyBooks";
+import MyHistory from "./app/pages/patrons/MyHistory";
+import TopBar from "./app/components/TopBar/TopBar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar />
+      <BrowserRouter>
+        <SideBar />
+        <Route path="/library" component={MainLibrary} />
+        <Route path="/myrequest" component={MyRequest} />
+        <Route path="/mybook" component={MyBooks} />
+        <Route path="/history" component={MyHistory} />
+      </BrowserRouter>
     </div>
   );
 }
