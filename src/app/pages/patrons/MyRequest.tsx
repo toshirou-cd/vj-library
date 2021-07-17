@@ -1,6 +1,8 @@
+import { render } from '@testing-library/react'
 import React, { useState } from 'react'
 import { Container, Menu,MenuItem, Search, Tab, Table, TabPane,Segment, TableHeader, Input, MenuMenu } from 'semantic-ui-react'
 import BorrowRequestList from './BorrowRequestList'
+import ExtandRequestList from './ExtandRequestList'
 import './test.css'
 
 const panes = [
@@ -41,11 +43,8 @@ const MyRequest:React.FC = () => {
                 </Menu.Menu>
             </Menu>
             <Segment>
-                <BorrowRequestList/>
+                {activeName === "Borrow Request" ? <BorrowRequestList/>: <ExtandRequestList/>}
             </Segment>
-           {/* <Tab menu={{ secondary: true, pointing: true }} panes={panes} renderActiveOnly>
-               
-            </Tab>          */}
         </Container>
       
         

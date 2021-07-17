@@ -8,10 +8,11 @@ import {
   ItemDescription,
   Label,
   Menu,
+  Popup,
   Segment,
 } from "semantic-ui-react";
 import "./test.css";
-const BorrowRequestList = () => {
+const ExtandRequestList = () => {
   return (
     <Container className="BorrowReqList">
       <Button color="blue" icon content="Sort">
@@ -29,8 +30,10 @@ const BorrowRequestList = () => {
             <Item.Meta>
               <span>John Green</span>
             </Item.Meta>
-            <ItemDescription>
-              <Input fluid size="big" focus placeholder="Your Message..." />
+            <ItemDescription >
+                Expired day : 20/07/2021<br/>
+                Extend :10 days 
+             
             </ItemDescription>
             <Item.Extra>
               <Label icon="laptop" content="Online Book" />
@@ -41,7 +44,11 @@ const BorrowRequestList = () => {
                 <Icon name="remove" />
               </Button>
             </Item.Extra>
+            
           </Item.Content>
+          
+               
+         
         </Item>
         <Item>
           <Item.Image
@@ -54,7 +61,8 @@ const BorrowRequestList = () => {
               <span>Mac Momotivsky</span>
             </Item.Meta>
             <ItemDescription>
-              <Input fluid size="big" focus placeholder="Your Message..." />
+                Expired day : 20/07/2021<br/>
+                Extend :10 days 
             </ItemDescription>
             <Item.Extra>
               <Label>
@@ -82,8 +90,9 @@ const BorrowRequestList = () => {
         floated="right"
         size="big"
       />
+      
     </Container>
   );
 };
 
-export default BorrowRequestList;
+export default ExtandRequestList;
