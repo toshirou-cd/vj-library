@@ -1,6 +1,14 @@
 .SideBar{
   position: fixed !important;
-  width: fit-content !important;
+  width:200px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;  
+  padding-bottom: 30px;
+}
+.Logo{
+  padding-bottom: 30px;
 }
 .MenuItem{
     color: red !important;
