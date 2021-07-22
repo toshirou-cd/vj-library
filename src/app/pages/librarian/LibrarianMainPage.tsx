@@ -7,6 +7,12 @@ import Book from './Book'
 import DashBoard from './DashBoard'
 import ManageLibrary from './ManageLibrary'
 import UserRequest from './UserRequest'
+import AuthorList from './ManageAuthor'
+import CategoryList from './ManageCategory'
+import PublisherList from './ManagePublisher'
+import LocationList from './ManageLocation'
+import BookshelfList from './ManageBookshelf'
+import DepartmentList from './ManageDepartment'
 
 const LibrarianMainPage:React.FC = () => {
     return (
@@ -19,6 +25,12 @@ const LibrarianMainPage:React.FC = () => {
             <Route path="/mybook" component={Book}/>
             <Route path="/myrequest" component={MyRequest}/>
             <Route path="/managelibrary" component={ManageLibrary}/>
+            <Route path="/manageauthor" component={AuthorList}/>
+            <Route path="/managecategory" component={CategoryList}/>
+            <Route path="/managepublisher" component={PublisherList}/>
+            <Route path="/managelocation" component={LocationList}/>
+            <Route path="/managebookshelf" component={BookshelfList}/>
+            <Route path="/managedepartment" component={DepartmentList}/>
             </BrowserRouter>
         </div>
     )
