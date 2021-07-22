@@ -1,0 +1,45 @@
+.BooksContainer{
+    width: 1400px;
+    display: flex;
+}
+.TableRow{
+    width: 1400px;
+    height: 30px;
+    padding-top: 10px;
+}
+.Card{
+    height: 285px;
+}
+.Image{
+    width: 20px;
+    height: 25px;
+    align-self: center;
+}
+.BookImageCard{
+    height: 500px;
+    align-self: center;
+}
+.BookImage{
+    width: 300px;
+    height: 500px;
+    padding-top: 20px;
+    align-self: center;
+}
+.BookList{
+    min-height: 80vh !important;
+    height: fit-content;
+ }
+ .BookType{
+     background-color: yellow;
+ }
+ .InventoryBookCard{
+     height: 335px;
+ }
+ .Icon{
+     align-self: center;
+     padding-top: 150px;
+ }
+ .Insert{
+     align-self: center;
+     padding-top: 180px;
+ }
