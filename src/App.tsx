@@ -9,13 +9,14 @@ import MyHistory from "./app/pages/patrons/MyHistory";
 import TopBar from "./app/components/TopBar/TopBar";
 import PatronMainPage from "./app/pages/patrons/PatronMainPage";
 import LibrarianMainPage from "./app/pages/librarian/LibrarianMainPage";
+import ChiefLibrarianMainPage from "./app/pages/chieflirarian/ChiefLibrarianMainPage";
 
 function App() {
 
   // const [role, setRole] = useState<string>("patron")
   return (
     <div className="App">
-        <LibrarianMainPage/>
+        <ChiefLibrarianMainPage/>
     </div>
   );
 }

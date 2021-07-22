@@ -27,3 +27,19 @@ const LibSideBarData = [
     },
 ]
 export default LibSideBarData
+
+export const ChiefLibSideBarData = [
+    ...LibSideBarData,
+    {
+        title : "Book Request",
+        icon  : <Icon name='book' size='large'/>,
+        path  : "/bookrequest"
+    },
+    {
+        title : "Statistic",
+        icon  : <Icon name='book' size='large'/>,
+        path  : "/statistic"
+    }
+]
+ 
+
