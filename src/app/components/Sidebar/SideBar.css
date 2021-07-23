@@ -42,3 +42,8 @@
     background-color: #E12127 !important ;
     color: white !important;
   }
+
+  .MenuItem.DropDown_Menu{
+    z-index: 100;
+    display: block;
+  }

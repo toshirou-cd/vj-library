@@ -16,7 +16,7 @@ function App() {
   // const [role, setRole] = useState<string>("patron")
   return (
     <div className="App">
-        <ChiefLibrarianMainPage/>
+        <LibrarianMainPage/>
     </div>
   );
 }
