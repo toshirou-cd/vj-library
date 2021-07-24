@@ -21,6 +21,7 @@ const BookshelfList = () => {
             <Table celled>
                 <TableHeader>
                     <TableRow>
+                        <TableHeaderCell>Number</TableHeaderCell>
                         <TableHeaderCell>Location</TableHeaderCell>
                         <TableHeaderCell>Spots</TableHeaderCell>
                         <TableHeaderCell>Columns and rows</TableHeaderCell>
@@ -29,6 +30,7 @@ const BookshelfList = () => {
                 </TableHeader>
                 <TableBody>
                     <TableRow>
+                        <TableCell>1</TableCell>
                         <TableCell>Vietjet 1-1</TableCell>
                         <TableCell>100</TableCell>
                         <TableCell>10</TableCell>
@@ -39,6 +41,7 @@ const BookshelfList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>2</TableCell>
                         <TableCell>Vietjet 1-2</TableCell>
                         <TableCell>100</TableCell>
                         <TableCell>10</TableCell>
@@ -49,6 +52,7 @@ const BookshelfList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>3</TableCell>
                         <TableCell>Vietjet 2-1</TableCell>
                         <TableCell>100</TableCell>
                         <TableCell>10</TableCell>
@@ -59,6 +63,7 @@ const BookshelfList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>4</TableCell>
                         <TableCell>Vietjet 2-2</TableCell>
                         <TableCell>100</TableCell>
                         <TableCell>10</TableCell>
@@ -70,7 +75,7 @@ const BookshelfList = () => {
                     </TableRow>
                 </TableBody>
             </Table>
-            <Pagination defaultActivePage={1} totalPages={5} className="Button" /> 
+            <Pagination defaultActivePage={1} totalPages={5} className="Paging" /> 
             </Segment>  
                 {addTrigger && <AddBookshelf/> }
                 {updateTrigger && <UpdateBookshelf/> }

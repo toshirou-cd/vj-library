@@ -21,11 +21,13 @@ const DepartmentList = () => {
             <Table celled>
                 <TableHeader>
                     <TableRow>
+                        <TableHeaderCell>Number</TableHeaderCell>
                         <TableHeaderCell>Name</TableHeaderCell>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
                     <TableRow>
+                        <TableCell>1</TableCell>
                         <TableCell>
                             Vietjet
                             <Button color="red" floated="right">Disable</Button>
@@ -33,6 +35,7 @@ const DepartmentList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>2</TableCell>
                         <TableCell>
                             Vietjet
                             <Button color="red" floated="right">Disable</Button>
@@ -40,6 +43,7 @@ const DepartmentList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>3</TableCell>
                         <TableCell>
                             Vietjet
                             <Button color="red" floated="right">Disable</Button>
@@ -47,6 +51,7 @@ const DepartmentList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>4</TableCell>
                         <TableCell>
                             Vietjet
                             <Button color="red" floated="right">Disable</Button>
@@ -55,7 +60,7 @@ const DepartmentList = () => {
                     </TableRow>
                 </TableBody>
             </Table>
-            <Pagination defaultActivePage={1} totalPages={5} className="Button" /> 
+            <Pagination defaultActivePage={1} totalPages={5} className="Paging" /> 
             </Segment>  
                 {addTrigger && <AddDepartment/> }
                 {updateTrigger && <UpdateDepartment/> }

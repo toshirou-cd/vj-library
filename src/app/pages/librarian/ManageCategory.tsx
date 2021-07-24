@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Container, Button, Icon, Pagination, Segment, Table, TableHeader, TableRow, TableHeaderCell, TableBody, TableCell, Grid, GridColumn } from 'semantic-ui-react';
+import { Container, Button, Icon, Pagination, Segment, Table, TableHeader, TableRow, TableHeaderCell, TableBody, TableCell } from 'semantic-ui-react';
 import "./Library.css";
 import AddCategory from "./AddCategory";
 import UpdateCategory from "./UpdateCategory";
@@ -21,11 +21,13 @@ const CategoryList = () => {
             <Table celled>
                 <TableHeader>
                     <TableRow>
+                        <TableHeaderCell>Number</TableHeaderCell>
                         <TableHeaderCell>Name</TableHeaderCell>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
                     <TableRow>
+                        <TableCell>1</TableCell>
                         <TableCell>
                             Novel
                             <Button color="red" floated="right">Disable</Button>
@@ -33,62 +35,7 @@ const CategoryList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
-                        <TableCell>
-                            Drama
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Novel
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Drama
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Novel
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Drama
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Novel
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Drama
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Novel
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
+                        <TableCell>2</TableCell>
                         <TableCell>
                             Drama
                             <Button color="red" floated="right">Disable</Button>
@@ -97,7 +44,7 @@ const CategoryList = () => {
                     </TableRow>
                 </TableBody>
             </Table>
-            <Pagination defaultActivePage={1} totalPages={5} className="Button" /> 
+            <Pagination defaultActivePage={1} totalPages={5} className="Paging" /> 
             </Segment>  
                 {addTrigger && <AddCategory/> }
                 {updateTrigger && <UpdateCategory/> }

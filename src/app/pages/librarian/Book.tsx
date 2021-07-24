@@ -21,155 +21,56 @@ const BookList = () => {
             <Table celled>
                 <TableHeader>
                     <TableRow>
+                        <TableHeaderCell>Number</TableHeaderCell>
                         <TableHeaderCell>Name</TableHeaderCell>
-                        <TableHeaderCell>Author</TableHeaderCell>
-                        <TableHeaderCell>Category</TableHeaderCell>
+                        <TableHeaderCell>Book Type</TableHeaderCell>
+                        <TableHeaderCell>Language</TableHeaderCell>
+                        <TableHeaderCell>Date created</TableHeaderCell>
+                        <TableHeaderCell>Detail</TableHeaderCell>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
-                    <TableRow onClick={() => setTrigger(true)}>
+                    <TableRow>
+                        <TableCell>1</TableCell>
                         <TableCell>
                             <Grid>
                                 <GridColumn width="1">
                                     <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
                                 </GridColumn>    
-                                <GridColumn width="9">
+                                <GridColumn width="12">
                                     The fault in our stars
+                                    <br/>
+                                    John Green
                                 </GridColumn>
                             </Grid>            
                         </TableCell>
-                        <TableCell>John Green</TableCell>
-                        <TableCell>Novel, Drama</TableCell>
+                        <TableCell>Online Book</TableCell>
+                        <TableCell>English</TableCell>
+                        <TableCell>1-1-2021</TableCell>
+                        <TableCell><a onClick={() => setTrigger(true)}>Detail</a></TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>2</TableCell>
                         <TableCell>
                             <Grid>
                                 <GridColumn width="1">
                                     <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
                                 </GridColumn>    
-                                <GridColumn width="9">
+                                <GridColumn width="12">
                                     Howl's moving castle
-                                </GridColumn>
-                            </Grid>
-                        </TableCell>
-                        <TableCell>Diana Wynne Jones</TableCell>
-                        <TableCell>Novel, Science Fiction</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            <Grid>
-                                <GridColumn width="1">
-                                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
-                                </GridColumn>    
-                                <GridColumn width="9">
-                                    The fault in our stars
+                                    <br/>
+                                    Diana Wynne Jones
                                 </GridColumn>
                             </Grid>            
                         </TableCell>
-                        <TableCell>John Green</TableCell>
-                        <TableCell>Novel, Drama</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            <Grid>
-                                <GridColumn width="1">
-                                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
-                                </GridColumn>    
-                                <GridColumn width="9">
-                                    Howl's moving castle
-                                </GridColumn>
-                            </Grid>
-                        </TableCell>
-                        <TableCell>Diana Wynne Jones</TableCell>
-                        <TableCell>Novel, Science Fiction</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            <Grid>
-                                <GridColumn width="1">
-                                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
-                                </GridColumn>    
-                                <GridColumn width="9">
-                                    The fault in our stars
-                                </GridColumn>
-                            </Grid>            
-                        </TableCell>
-                        <TableCell>John Green</TableCell>
-                        <TableCell>Novel, Drama</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            <Grid>
-                                <GridColumn width="1">
-                                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
-                                </GridColumn>    
-                                <GridColumn width="9">
-                                    Howl's moving castle
-                                </GridColumn>
-                            </Grid>
-                        </TableCell>
-                        <TableCell>Diana Wynne Jones</TableCell>
-                        <TableCell>Novel, Science Fiction</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            <Grid>
-                                <GridColumn width="1">
-                                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
-                                </GridColumn>    
-                                <GridColumn width="9">
-                                    The fault in our stars
-                                </GridColumn>
-                            </Grid>            
-                        </TableCell>
-                        <TableCell>John Green</TableCell>
-                        <TableCell>Novel, Drama</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            <Grid>
-                                <GridColumn width="1">
-                                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
-                                </GridColumn>    
-                                <GridColumn width="9">
-                                    Howl's moving castle
-                                </GridColumn>
-                            </Grid>
-                        </TableCell>
-                        <TableCell>Diana Wynne Jones</TableCell>
-                        <TableCell>Novel, Science Fiction</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            <Grid>
-                                <GridColumn width="1">
-                                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
-                                </GridColumn>    
-                                <GridColumn width="9">
-                                    The fault in our stars
-                                </GridColumn>
-                            </Grid>            
-                        </TableCell>
-                        <TableCell>John Green</TableCell>
-                        <TableCell>Novel, Drama</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            <Grid>
-                                <GridColumn width="1">
-                                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" className="Image"/>
-                                </GridColumn>    
-                                <GridColumn width="9">
-                                    Howl's moving castle
-                                </GridColumn>
-                            </Grid>
-                        </TableCell>
-                        <TableCell>Diana Wynne Jones</TableCell>
-                        <TableCell>Novel, Science Fiction</TableCell>
+                        <TableCell>Online Book</TableCell>
+                        <TableCell>English</TableCell>
+                        <TableCell>1-1-2021</TableCell>
+                        <TableCell><a>Detail</a></TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
-            <Pagination defaultActivePage={1} totalPages={5} className="Button" /> 
+            <Pagination defaultActivePage={1} totalPages={5} className="Paging" /> 
             </Segment>  
                 {trigger && <DetailBook/> } 
                 {addTrigger && <AddBook/> }

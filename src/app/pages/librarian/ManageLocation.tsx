@@ -21,6 +21,7 @@ const LocationList = () => {
             <Table celled>
                 <TableHeader>
                     <TableRow>
+                        <TableHeaderCell>Number</TableHeaderCell>
                         <TableHeaderCell>Name</TableHeaderCell>
                         <TableHeaderCell>Number of bookshelves</TableHeaderCell>
                         <TableHeaderCell>Bookshelves in specific location</TableHeaderCell>
@@ -28,6 +29,7 @@ const LocationList = () => {
                 </TableHeader>
                 <TableBody>
                     <TableRow>
+                        <TableCell>1</TableCell>
                         <TableCell>Vietjet 1</TableCell>
                         <TableCell>20</TableCell>
                         <TableCell>
@@ -37,6 +39,7 @@ const LocationList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>2</TableCell>
                         <TableCell>Vietjet 2</TableCell>
                         <TableCell>20</TableCell>
                         <TableCell>
@@ -46,6 +49,7 @@ const LocationList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>3</TableCell>
                         <TableCell>Vietjet 3</TableCell>
                         <TableCell>20</TableCell>
                         <TableCell>
@@ -55,6 +59,7 @@ const LocationList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
+                        <TableCell>4</TableCell>
                         <TableCell>Vietjet 4</TableCell>
                         <TableCell>20</TableCell>
                         <TableCell>
@@ -65,7 +70,7 @@ const LocationList = () => {
                     </TableRow>
                 </TableBody>
             </Table>
-            <Pagination defaultActivePage={1} totalPages={5} className="Button" /> 
+            <Pagination defaultActivePage={1} totalPages={5} className="Paging" /> 
             </Segment>  
                 {addTrigger && <AddLocation/> }
                 {updateTrigger && <UpdateLocation/> }

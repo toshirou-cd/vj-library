@@ -21,11 +21,13 @@ const AuthorList = () => {
             <Table celled>
                 <TableHeader>
                     <TableRow>
+                        <TableHeaderCell>Number</TableHeaderCell>
                         <TableHeaderCell>Name</TableHeaderCell>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
                     <TableRow>
+                        <TableCell>1</TableCell>
                         <TableCell>
                             John Green
                             <Button color="red" floated="right">Disable</Button>
@@ -33,62 +35,7 @@ const AuthorList = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow>
-                        <TableCell>
-                            Diana Wynne Jones
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            John Green
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Diana Wynne Jones
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            John Green
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Diana Wynne Jones
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            John Green
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            Diana Wynne Jones
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell>
-                            John Green
-                            <Button color="red" floated="right">Disable</Button>
-                            <Button color="yellow" floated="right">Update</Button>
-                        </TableCell>
-                    </TableRow>
-                    <TableRow>
+                        <TableCell>2</TableCell>
                         <TableCell>
                             Diana Wynne Jones
                             <Button color="red" floated="right">Disable</Button>
@@ -97,7 +44,7 @@ const AuthorList = () => {
                     </TableRow>
                 </TableBody>
             </Table>
-            <Pagination defaultActivePage={1} totalPages={5} className="Button" /> 
+            <Pagination defaultActivePage={1} totalPages={5} className="Paging" /> 
             </Segment>  
                 {addTrigger && <AddAuthor/> }
                 {updateTrigger && <UpdateAuthor/> }
