@@ -10,6 +10,7 @@ import TopBar from "./app/components/TopBar/TopBar";
 import PatronMainPage from "./app/pages/patrons/PatronMainPage";
 import LibrarianMainPage from "./app/pages/librarian/LibrarianMainPage";
 import ChiefLibrarianMainPage from "./app/pages/chieflirarian/ChiefLibrarianMainPage";
+import AdminMainPage from "./app/pages/admin/AdminMainPage";
 
 function App() {
 
